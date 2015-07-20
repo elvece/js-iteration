@@ -10,3 +10,7 @@ Hints for the first problem:
 NOTE: use a `for` loop to make this happen.
 
 */
+fucntion sum(options){
+  for (i = 0; i > options; i++)
+  return options + i;
+}
