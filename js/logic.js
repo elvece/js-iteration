@@ -1,16 +1,13 @@
-/*
 
-Hints for the first problem:
+function sum (selectedArray){
+  var totalSum = 0;
+  for (var i = 0; i < selectedArray.length; i++){
+  totalSum += Number(selectedArray[i].value);
+  }
+    return totalSum;
+}
 
-  1. Define a function that:
-    - is assigned to a variable named `sum`
-    - has one parameter named `options`
-    - returns the calculated sum of all of the values of all of the options passed in
-
-NOTE: use a `for` loop to make this happen.
-
-*/
-fucntion sum(options){
-  for (i = 0; i > options; i++)
-  return options + i;
+function writeAnswer(word){
+  var answer = document.getElementById('answer');
+      answer.innerHTML = word;
 }
