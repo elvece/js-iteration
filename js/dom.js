@@ -11,15 +11,26 @@ document.getElementById("sum-all").addEventListener("click", function(){
   }
 );
 
+document.getElementById("count-selected").addEventListener("click", function(){
+  var result = count(selected);
+  countAnswer(result);
+  }
+);
+
 document.getElementById("sum-selected").addEventListener("click", function(){
   var result = sum(selected);
   writeAnswer(result);
   }
 );
 
-function writeAnswer(word){
-  var answer = document.getElementById('answer');
-      answer.innerHTML = word;
+document.getElementById("average-all").addEventListener("click", function(){
+  var result = avg(options);
+  writeAnswer(result);
+  }
+);
 
-}
-
+document.getElementById("average-selected").addEventListener("click", function(){
+  var result = avg(selected);
+  writeAnswer(result);
+  }
+);
