@@ -34,41 +34,61 @@ function avg (selectedArray){
 }
 
 //Names functions
-;
 
-function splitNames(names){
+//in: names array, process: take names array and print to answer section UPDATE: function works
+function printAllNames(){
   var namesArray = names.split('\n');
-  for (var i = 0; i < namesArray.length; i++) {
-    namesArray = namesArray[i].split(" ");
-  } if (/*array has more than 3 indexes*/){
-    /*push last two together*/;
-    else {
-      /*take that split index and push it into a new array
-      then access every first index of each object in new array for first name and second index for each object in new array for last name
-      // var firstName = namesArray[0]av;
-      // var lastName = namesArray[1];
-      // namesArray[i].push(firstName, lastName);
-    }
-
+  var newArr = [];
+  for (var i = 0; i < namesArray.length; i++){
+    newArr.push(namesArray[i].split(" "));
   }
-
-
-  return namesArray;
+  return newArr;
 }
 
-console.log(splitNames());
+//working on spliting names into first and last names
+function splitNames(){
+  var namesArray = names.split('\n');
+  var newArr = [];
+  newArr.push(namesArray[i].split(" "));
+  return newArr;
+}
+
+
+  // for (var i = 0; i < namesArray.length; i++){
+  //   newArr.push(namesArray[i].split(" "));
+
+  //     for (var j = 0; j < newArr.length; j++){
 
 
 
+  //       if (newArr[j].length > 2){
+
+  //       newArr[j][1].concat(" ", newArr[j][2]);
+  //     }
+  //   }
+  // }
+  // return newArr;
 
 
 
+//pseudo/practice code for splitting names into first and last:
+  // for (var j = 0; j < newArr.length; j++) {
+  //   if (newArr[j].length > 2){
+  //     newArr[j][1].concat(" ", newArr[j][2]);
 
 
+    // if (/*array has more than 3 indexes) {
+    // /*push last two together*/;
+    // else {
+    //   take that split index and push it into a new array
+    //   then access every first index of each object in new array for first name and second index for each object in new array for last name
+    //   // var firstName = namesArray[0]av;
+    //   // var lastName = namesArray[1];
+    //   // namesArray[i].push(firstName, lastName);
+    // }
+
+  // }
 
 
-
-
-
-
-
+  // return namesArray;
+// }
