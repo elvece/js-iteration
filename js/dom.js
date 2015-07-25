@@ -1,4 +1,4 @@
-
+//Prices DOM manipulation
 var options = document.getElementsByTagName('select')[0].children;
 
 var selected = document.getElementsByTagName('select')[0].selectedOptions;
@@ -34,3 +34,28 @@ document.getElementById("average-selected").addEventListener("click", function()
   writeAnswer(result);
   }
 );
+
+//Names DOM manipulation
+var names = document.getElementsByClassName('all-names')[0].value;
+
+var namesArray = names.split('\n');
+
+function splitNames(namesArray){
+  var namesArraySplit = 0;
+  for (var i = 0; i < namesArray.length; i++) {
+    namesArraySplit = namesArray[i].split(" ");
+  }
+  return namesArraySplit;
+}
+
+console.log(splitNames());
+
+
+
+
+
+
+
+
+
+
