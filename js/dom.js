@@ -50,27 +50,26 @@ document.getElementById("all-names").addEventListener("click", function(){
   }
 });
 
-document.getElementById("first-names").addEventListener("click"), function(){
+document.getElementById("first-names").addEventListener("click", function(){
   ul.innerHTML = null;
-  var result = firstNames(names);
+  var result = firstNames();
   for (var i = 0; i < result.length; i++) {
     var li = document.createElement("li");
     li.innerHTML = result[i];
     ul.appendChild(li);
-  };
+  }
+});
 
-};
+document.getElementById("last-names").addEventListener("click", function(){
+  ul.innerHTML = null;
+  var result = lastNames();
+  for (var i = 0; i < result.length; i++) {
+    var li = document.createElement("li");
+    li.innerHTML = result[i];
+    ul.appendChild(li);
+  }
+});
 
-document.getElementById("last-names").addEventListener("click"), function(){
+document.getElementById("names-with-lengths").addEventListener("click", function(){
 
-};
-
-document.getElementById("names-with-lengths").addEventListener("click"), function(){
-
-};
-
-
-
-
-
-
+});

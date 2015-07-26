@@ -43,19 +43,19 @@ function printAllNames(){
 
 
 function firstNames(){
-  var namesArray = names.split('\n');
+  var first = printAllNames();
   var newArr = [];
-  for (var i = 0; i < namesArray.length; i++){
-    newArr.push(namesArray[i][0]);
+  for (var i = 0; i < first.length; i++){
+    newArr.push(first[i].split(" ")[0]);
   }
   return newArr;
 }
 
 function lastNames(){
-  var arr = printAllNames(names);
+  var last = printAllNames();
   var newArr = [];
-    for (var i = 0; i < arr.length; i++){
-    newArr.push(arr[i][1]);
+    for (var i = 0; i < last.length; i++){
+    newArr.push(last[i].split(" ")[1]);
   }
   return newArr;
 }
