@@ -35,7 +35,7 @@ function avg (selectedArray){
 
 //Names functions
 
-//in: names array, process: take names array and print to answer section UPDATE: function works
+
 function printAllNames(){
   var namesArray = names.split('\n');
   return namesArray;
