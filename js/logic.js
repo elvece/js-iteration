@@ -38,21 +38,42 @@ function avg (selectedArray){
 //in: names array, process: take names array and print to answer section UPDATE: function works
 function printAllNames(){
   var namesArray = names.split('\n');
+  return namesArray;
+}
+
+
+function firstNames(){
+  var namesArray = names.split('\n');
   var newArr = [];
   for (var i = 0; i < namesArray.length; i++){
-    newArr.push(namesArray[i].split(" "));
+    newArr.push(namesArray[i][0]);
   }
   return newArr;
 }
 
-//working on spliting names into first and last names
-function splitNames(){
-  var namesArray = names.split('\n');
+function lastNames(){
+  var arr = printAllNames(names);
   var newArr = [];
-  newArr.push(namesArray[i].split(" "));
+    for (var i = 0; i < arr.length; i++){
+    newArr.push(arr[i][1]);
+  }
   return newArr;
 }
 
+// function nameLength(){
+//   var newArr = names.split('\n');
+//   for (var i = 0; i < names.length; i++){
+
+
+
+
+//     newArr[]
+//     finalArr.push(names[i].length);
+//     var finalArr = [];
+//     var name = finalArr.push(names[i]
+//   }
+
+// }
 
   // for (var i = 0; i < namesArray.length; i++){
   //   newArr.push(namesArray[i].split(" "));
@@ -91,4 +112,4 @@ function splitNames(){
 
 
   // return namesArray;
-// }
+//
