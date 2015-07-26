@@ -60,56 +60,13 @@ function lastNames(){
   return newArr;
 }
 
-// function nameLength(){
-//   var newArr = names.split('\n');
-//   for (var i = 0; i < names.length; i++){
+function nameLength(){
+  var length = printAllNames();
+  var newArr = [];
+  for (var i = 0; i < length.length; i++){
+    var result = length[i] + " - " + length[i].length;
+    newArr.push(result);
+  }
+  return newArr;
+}
 
-
-
-
-//     newArr[]
-//     finalArr.push(names[i].length);
-//     var finalArr = [];
-//     var name = finalArr.push(names[i]
-//   }
-
-// }
-
-  // for (var i = 0; i < namesArray.length; i++){
-  //   newArr.push(namesArray[i].split(" "));
-
-  //     for (var j = 0; j < newArr.length; j++){
-
-
-
-  //       if (newArr[j].length > 2){
-
-  //       newArr[j][1].concat(" ", newArr[j][2]);
-  //     }
-  //   }
-  // }
-  // return newArr;
-
-
-
-//pseudo/practice code for splitting names into first and last:
-  // for (var j = 0; j < newArr.length; j++) {
-  //   if (newArr[j].length > 2){
-  //     newArr[j][1].concat(" ", newArr[j][2]);
-
-
-    // if (/*array has more than 3 indexes) {
-    // /*push last two together*/;
-    // else {
-    //   take that split index and push it into a new array
-    //   then access every first index of each object in new array for first name and second index for each object in new array for last name
-    //   // var firstName = namesArray[0]av;
-    //   // var lastName = namesArray[1];
-    //   // namesArray[i].push(firstName, lastName);
-    // }
-
-  // }
-
-
-  // return namesArray;
-//

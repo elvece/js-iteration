@@ -71,5 +71,11 @@ document.getElementById("last-names").addEventListener("click", function(){
 });
 
 document.getElementById("names-with-lengths").addEventListener("click", function(){
-
+  ul.innerHTML = null;
+  var result = nameLength();
+  for (var i = 0; i < result.length; i++) {
+    var li = document.createElement("li");
+    li.innerHTML = result[i];
+    ul.appendChild(li);
+  }
 });
