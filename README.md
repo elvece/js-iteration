@@ -1,4 +1,6 @@
-# Working with `while` and `for` loops
+## Working with `while` and `for` loops
+
+***This repo contains my solutions for the following exercise:***
 
 There's a common pattern with iteration where you:
 
@@ -9,13 +11,13 @@ There's a common pattern with iteration where you:
 
 This exercise will give you several chances to practice this pattern.
 
-## Resources
+### Resources
 
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
 
-## Instructions
+### Instructions
 
 - Write the appropriate code in `js/dom.js` and `js/logic.js`
 - Open `index.html` in your browser and click the buttons to see your results
@@ -23,7 +25,7 @@ This exercise will give you several chances to practice this pattern.
 
 By the end of the exercise you should have 1 event listener per button in `js/dom.js` and you should have 1 function per button in `js/logic.js`.
 
-### `js/logic.js`
+#### `js/logic.js`
 
 In `js/logic.js` write only pure functions: functions that take inputs, make calculations and return a result.  An example of a pure function is:
 
@@ -37,7 +39,7 @@ var biggest = function (a, b) {
 }
 ```
 
-### `js/dom.js`
+#### `js/dom.js`
 
 In `js/dom.js` write all of your code that will work with the DOM.  For example:
 
@@ -45,7 +47,7 @@ In `js/dom.js` write all of your code that will work with the DOM.  For example:
 - `someElement.addEventListener`
 - `someElement.innerHTML = 'some value'`
 
-## Stories
+### Stories
 
 **(bug) HTML Is Invalid**
 
@@ -84,7 +86,7 @@ HINT: you can clear the `ul` by setting `innerHTML` to `null`.
 - Users can see a list of last names
 - Users can see a list of names with their lengths in the format ("Joe Smith - 9 ")
 
-## Stretch Goal
+### Stretch Goal
 
 Rewrite all functions in `js/logic.js` to not use any `for` _or_ `while` loops.  Search MDN for:
 
